@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма регистрации</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="modal-regustration">
+        <div class="modal-regustration__top-body top-body-regustration">
+            <div class="top-body-regustration__logo">
+                <img src="resource/img/logo.png" alt="Логотип">
+            </div>
+            <ul class="top-body-regustration__bullets">
+                <li class="top-body-regustration__bullet top-body-regustration__bullet_active"></li>
+                <li class="top-body-regustration__line"></li>
+                <li class="top-body-regustration__bullet"></li>
+                <li class="top-body-regustration__line"></li>
+                <li class="top-body-regustration__bullet"></li>
+            </ul>
+            <a href="#" class="top-body-regustration__close">
+                <img src="resource/img/close-button.png" alt="Закрытие Попапа">
+            </a>
+        </div>
+        <div class="modal-regustration__content-body content-body">
+            <h1 class="content-body__title">Registration</h1>
+            <p class="content-body__text">Fill in the registration data. It will take a couple of minutes.
+                All you need is a phone number and e-mail</p>
+            <div class="content-body__important important">
+                <img src="resource/img/close.png" alt="Важно" class="important__close">
+                <div class="important__text">We take privacy issues seriously. You can be sure that your personal data
+                    is securely protected.</div>
+                <a href="#"><img src="resource/img/close-arrow.png" alt="Важно" class="important__close-arrow"></a>
+            </div>
+            <form class="content-body__form form" action="#">
+                <label class="form__title" for="select">Enter your phone number</label>
+                <div class="form__wrapper">
+                    <select class="form__select" name="select" data-class-modif="form">
+                        <option value="1" selected>+8</option>
+                        <option value="2">+7</option>
+                        <option value="3">+5</option>
+                        <option value="4">+4</option>
+                    </select>
+                    <input class="form__input" placeholder="771-312-8726" type="number">
+                </div>
+            </form>
+            <button class="content-body__btn">Send Code</button>
+        </div>
+    </div>
+</body>
+
+</html>
